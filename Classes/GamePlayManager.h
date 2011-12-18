@@ -296,6 +296,9 @@ namespace Dog3D
 				return -1;
 			}
 		}
+        
+        // spawns in single ball 
+		void SpawnBall(Entity *ball, int position = 0);
 		
 	private:
 		
@@ -334,9 +337,6 @@ namespace Dog3D
 		bool ReclaimBalls(float dt);
 		
 		void ClampVelocity();
-
-		// spawns in single ball 
-		void SpawnBall(Entity *ball, int position = 0);
 		
 		// either continuous spawn or to cannon
 		void ReclaimBall(Entity *ball);

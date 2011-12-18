@@ -137,7 +137,7 @@ namespace Dog3D
 			mTexCoords = coords;
 		}
 		
-		inline void SetTexture( const Texture2D *texture)
+		inline void SetTexture(  Texture2D *texture)
 		{
 			mTexture = texture;	
 		}

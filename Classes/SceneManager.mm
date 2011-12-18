@@ -375,56 +375,7 @@ void SceneManager::LoadGeneratedObjects(NSDictionary *rootDictionary)
 		
 		NSString *type = [object objectForKey:@"type"];
 		
-		if ([type compare:@"ball"] == NSOrderedSame )
-		{
-			
-			float radius = [[object objectForKey:@"scale"] floatValue];
-			
-			int ballType = [[object objectForKey:@"ballType"] intValue];
-			
-			btVector3 pos( 8, 1.5, 10);
-						
-			// can roll if not in paddle mode
-			Entity *ball = NULL;
-			
-			ball = GameEntityFactory::BuildBall(radius, 
-												pos, 
-												false, 
-												0.3f, 
-												1.0f, 
-												(ExplodableComponent::ExplosionType) ballType , 
-												0.5f);
-			
-			
-						
-			PhysicsComponent *physics = dynamic_cast<PhysicsComponent*>(ball->GetPhysicsComponent());
-			
-			// add to phyz mgr
-			PhysicsManager::Instance()->AddComponent( physics );
-
-			// add to game mgr
-			GamePlayManager::Instance()->AddBall( ball, ballType );			
-			
-				
-			if(ballType == ExplodableComponent::BALL_8)
-			{
-				// explicitly spawn in 
-				GamePlayManager::Instance()->SpawnBall(ball, poolBallCount-1);		
-			}
-			else {
-				// explicitly spawn in 
-				GamePlayManager::Instance()->SpawnBall(ball);						
-			}
-			
-			poolBallCount++;
-
-			
-			GraphicsManager::Instance()->AddComponent(ball->GetGraphicsComponent(), GraphicsManager::POST);
-			
-			mBalls.push_back(ball);
-			
-		}
-		else if([type compare:@"cannon"] == NSOrderedSame )
+		if([type compare:@"cannon"] == NSOrderedSame )
 		{
 			
 			float scale = [[object objectForKey:@"scale"] floatValue];

@@ -33,7 +33,7 @@ using namespace std;
 using namespace Dog3D;
 
 const float kFixedHeight = 10;
-const float kPegRestitution = 0.5f;
+const float kPegRestitution = 0.9f;
 
 /// not added to phys mgr or game play mgr
 Entity *GameEntityFactory::BuildBall( float radius, 
