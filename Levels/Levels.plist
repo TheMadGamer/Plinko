@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>group</key>
+		<true/>
+		<key>title</key>
+		<string>Campaign</string>
+	</dict>
+	<dict>
+		<key>colorID</key>
+		<integer>0</integer>
+		<key>title</key>
+		<string>RockTop1</string>
+		<key>filename</key>
+		<string>RockTop1.plist</string>
+	</dict>
+	<dict>
+		<key>colorID</key>
+		<integer>0</integer>
+		<key>title</key>
+		<string>R3</string>
+		<key>filename</key>
+		<string>R3.plist</string>
+	</dict>
+	<dict>
+		<key>colorID</key>
+		<integer>0</integer>
+		<key>title</key>
+		<string>P1</string>
+		<key>filename</key>
+		<string>P1.plist</string>
+	</dict>
+</array>
+</plist>
