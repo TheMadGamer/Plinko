@@ -445,7 +445,7 @@ void SceneManager::LoadGeneratedObjects(NSDictionary *rootDictionary)
 				//ExplodableComponent::ExplosionType randType = ExplodableComponent::EXPLODE_SMALL;
 				// can roll if not in paddle mode
 				// in the case of ricochet, anti-gopher ball that doesn't detonate itself, only the goph
-				Entity *ball = GameEntityFactory::BuildBall(radius, pos, true ,
+				Entity *ball = GameEntityFactory::BuildBall(0.25, pos, true ,
 															0.8f,
 															1.0f,  
 															(ExplodableComponent::ExplosionType) randType, 
